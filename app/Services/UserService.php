@@ -3,8 +3,6 @@
 
 namespace App\Services;
 
-
-
 use App\Models\User;
 use App\Traits\FileTrait;
 use Illuminate\Http\Response;
@@ -36,7 +34,7 @@ class UserService
             return [
                 'success' => true,
                 'user' => $user,
-                'message' => '',
+                'message' => 'User is successfully created',
                 'status' => Response::HTTP_OK
             ];
         } catch (\Exception $e) {
